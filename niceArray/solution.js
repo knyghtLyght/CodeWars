@@ -5,5 +5,5 @@ function isNice(arr){
       if(!(element + 1 === arr[i]) && !(element - 1 === arr[i])) flag = false;
     }
   });
-  return flag;
+  return flag;Thanks
 }
