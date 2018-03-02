@@ -1,13 +1,7 @@
 function isNice(arr){
-  let flag = false;
-  console.log(arr);
+  if(arr.length === 0) return false;
   for(let i in arr) {
-    arr[i] = parseInt(arr[i]);
-    console.log(arr[i]);
-    for(let j in arr) {
-      if(arr[i] - 1 === arr[j] || arr[i] + 1 === arr[j]) flag = true;
-      console.log(arr[i] - 1, arr[i] + 1), arr[j];
-    }
+    if(arr.indexOf(arr[i] - 1) === -1 && arr.indexOf(arr[i] + 1) === -1) return false;
   }
-  return flag;
+  return true;
 }
