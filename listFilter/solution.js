@@ -1,3 +1,4 @@
 function filter_list(list) {
-  return list.filter(element => element > 0);
+  console.log(list);
+  return list.filter(element => /\d/.test(element));
 }
